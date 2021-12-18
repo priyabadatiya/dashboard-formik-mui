@@ -97,7 +97,7 @@ export default function BasicTabs() {
                 </div>
             </TabPanel>
             <TabPanel value={value} index={1}>
-            <Stepper/>
+                <Stepper />
 
             </TabPanel>
 

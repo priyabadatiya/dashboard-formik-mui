@@ -45,7 +45,6 @@ export default function SignIn() {
     validationSchema: validationSchema,
     onSubmit: (values) => {
       verifyCredentials(values)
-
     },
   });
 
@@ -55,7 +54,6 @@ export default function SignIn() {
       localStorage.getItem('password') == "12345" && router.push("/home")
     console.log("hi")
   }, [])
-
 
   const handleClose = (event, reason) => {
     if (reason === 'clickaway') {
@@ -84,7 +82,6 @@ export default function SignIn() {
       setMessage({ type: "error", desc: "Incorrect Credential" })
       setOpen(true)
     }
-
   }
 
   return (
